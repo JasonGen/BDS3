@@ -32,7 +32,10 @@ namespace WPFClient
 
         void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
+            _context = new CompanyContext();
+            _customer = new Customer();
             Formulaire.DataContext = _customer;
+
 
         }
 
