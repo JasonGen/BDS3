@@ -1,5 +1,4 @@
 ﻿using BDS3LIBRARY;
-using Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +21,7 @@ namespace WPFClient
     /// </summary>
     public partial class MainWindow : Window
     {
-        private CompanyContext _context = new CompanyContext();
+        private CompanyContext _context;
         private Customer _customer;
         public MainWindow()
         {
@@ -33,7 +32,9 @@ namespace WPFClient
         void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
             _context = new CompanyContext();
-            _customer = new Customer();
+            _customer = _context.Customers.ToArray()[0];
+
+
             Formulaire.DataContext = _customer;
 
 

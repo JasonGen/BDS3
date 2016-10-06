@@ -4,12 +4,16 @@
         xmlns:xceed="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
         Title="MainWindow" Height="350" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="757*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock FontSize="40" FontWeight="Bold">Modifier le solde d'un compte client</TextBlock>
-        <Grid x:Name="Formulaire" Grid.Row="1">
+        <TextBlock FontSize="40" FontWeight="Bold" Grid.ColumnSpan="2">Modifier le solde d'un compte client</TextBlock>
+        <Grid x:Name="Formulaire" Grid.Row="1" Grid.ColumnSpan="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="25"></RowDefinition>
                 <RowDefinition Height="25"></RowDefinition>

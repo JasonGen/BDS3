@@ -16,7 +16,8 @@ namespace UnitTestProject1
             {
                 Name = "Alderbert Mathias",
                 AddressLine1 = "Rue des prisonniers, 22",
-                City = "Wepion", Country = "Belgique",
+                City = "Wepion",
+                Country = "Belgique",
                 EMail = "Ahem@gmail.com",
                 Id = 3,
                 Remark = "PAs de remarques",
